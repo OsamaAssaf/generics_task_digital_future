@@ -23,7 +23,6 @@ class UsersApi extends UsersRepository {
     return await NetworkService().fetchData(
       url,
       (data) {
-        // final Map<String,dynamic> map = data as Map<String,dynamic>;
         return UserModel.fromJson(data);
       },
     );
